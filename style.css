@@ -702,7 +702,7 @@ swiper-container {
 .contact_label::before {
     content: "";
     height: 5px;
-    background-color: #d03838;
+   
     position: absolute;
     left: 0;
     top: 10px;
