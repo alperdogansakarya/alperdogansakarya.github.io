@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <title>My Website</title>
+</head>
+
+<body>
+    <!--------LOGO,NAV------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Alper <i class="fa-brands fa-dev" style="color: #034703;"></i></a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link"><i
+                                class="bi bi-house-door-fill nav_icon"></i>Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link"><i class="bi bi-person-lines-fill nav_icon"></i></i>About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link"><i
+                                class="bi bi-file-earmark-code-fill nav_icon"></i>Skills</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link"><i class="bi bi-github nav_icon"></i>Projects</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link"><i
+                                class="bi bi-chat-left-text-fill nav_icon"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_btns">
+                <!-- # theme change-->
+                <i class="bi bi-moon-stars-fill change-theme" style="color: #034703;" id="theme-button"></i>
+            </div>
+
+
+
+        </nav>
+    </header>
+    <!------SOCIAL,IMAGE,CONTACT BUTTON------>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        
+                        <a href="https://github.com/alperdogansakarya" class="home_social-icon" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alialper-dogan/" class="home_social-icon" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path fill="#FF0066"
+                                    d="M41.6,-71.2C53.4,-65.2,62.1,-53,70,-40.2C77.8,-27.3,84.8,-13.6,85.6,0.4C86.3,14.5,80.8,29,72.8,41.6C64.8,54.3,54.3,65,41.7,73.9C29.2,82.7,14.6,89.6,1,87.9C-12.6,86.2,-25.2,75.9,-36.9,66.5C-48.5,57.1,-59.1,48.7,-66.4,37.8C-73.8,26.8,-77.9,13.4,-75.8,1.2C-73.8,-11.1,-65.6,-22.1,-58.5,-33.5C-51.5,-44.9,-45.4,-56.6,-35.9,-63.9C-26.3,-71.3,-13.1,-74.4,0.9,-75.9C14.9,-77.4,29.7,-77.3,41.6,-71.2Z"
+                                    transform="translate(100 100)" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home_blob-img" xlink: href="img/profil.jpeg" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I am Alper</h1>
+                        <h3 class="home_subtitle">Frontend Developer</h3>
+                        <p class="home_description">I promote, support and use free and open source software to the
+                            extent possible.</p>
+                        <a href="#contact">
+                            <button>Contact Me
+                                <div class="star-1">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-2">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-3">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-4">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-5">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-6">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <i class="bi bi-envelope-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!------ABOUT, DOWNLOAD CV------>
+
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My Introduction</span>
+            <div class="about_container container grid">
+                <img src="img/banner.jpeg" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">I am a 4th year student at Sakarya University. I am developing frontend. I have a curious and enthusiastic personality. If there's something I'm curious about, I'll keep asking until I find it. After learning, I am happy to help my environment.</p>
+                    <div class="about_button">
+                        <a download="" href="https://drive.google.com/file/d/1eF2i0GXCoNHuDNVH278KFgxhbObu8PYM/view?usp=sharing" target="_blank">
+                            <button>Download My CV
+                                <div class="star-1">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-2">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-3">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-4">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-5">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="star-6">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <defs></defs>
+                                        <g id="Layer_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path
+                                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                class="fil0"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <i class="bi bi-person-fill-down"></i>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------SKILLS, SKILLS BAR------>
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My Technical Level</span>
+            <div class="skills_container container grid">
+                <div class="skills_content">
+                    <div class="skills_header">
+                        <div>
+                            <h1 class="skills_title">Frontend Developer</h1>
+                            <span class="skills_subtitle">1.5 Year</span>
+                        </div>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <i class="fa-brands fa-html5"></i>
+                                <h3 class="skills_name">HTML</h3>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title"> <i class="fa-brands fa-css3-alt"></i>
+                                <h3 class="skills_name">CSS</h3>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title"> <i class="fa-brands fa-js"></i>
+                                <h3 class="skills_name">JavaScript</h3>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <i class="fa-brands fa-vuejs"></i>
+                                <h3 class="skills_name">VUE.JS</h3>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_title">
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <h3 class="skills_name">BOOSTRAP</h3>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!------PROJECTS ----->
+        <section class="projects section" id="projects">
+            <h2 class="section_title"> Project </h2>
+            <span class="section_subtitle">My Github Projects</span>
+            <div class="project_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
+                    <swiper-slide>
+                      <img src="img/a_login.png" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="img/login_img.png" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="img/music-playerr.png" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="img/signup.png" />
+                    </swiper-slide>
+                    <swiper-slide>
+                      <img src="img/weather_img.png" />
+                    </swiper-slide>
+                  </swiper-container>
+            </div>
+
+
+        </section>
+
+        <!------CONTACT,CONTACT FORM, CONTACT BUTTON----->
+
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <div class="contact_container container grid">
+                <div class="about-info grid">
+
+                    <div class="contact_info">
+                        <i class="fa-solid fa-envelope contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">E-Mail</h3>
+                            <span class="contact_subtitle">alperdogan613@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact_info">
+                        <i class="fa-solid fa-location-dot contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Sakarya/Turkey</span>
+                        </div>
+                    </div>
+
+                </div>
+                <form method="post" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label class="contact_label">Name</label>
+                            <input type="text" class="contact_input" placeholder="Enter Your Name ">
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">E-Mail</label>
+                            <input type="email" required class="contact_input"  placeholder="Enter Your E-Mail ">
+                        </div>
+                        <div class="contact_content">
+                            <label class="contact_label">Message</label>
+                            <textarea cols="0" rows="7" class="contact_input" placeholder="Enter Your Message "></textarea>
+                        </div>
+                        <div>
+                            <a href="#" class="beatae">
+                                <button>Contact Me
+                                    <div class="star-1">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="star-2">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="star-3">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="star-4">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="star-5">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="star-6">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                            <defs></defs>
+                                            <g id="Layer_x0020_1">
+                                                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                                <path
+                                                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                                                    class="fil0"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <i class="bi bi-envelope-at-fill button_icon"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
